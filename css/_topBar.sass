@@ -1,0 +1,72 @@
+#top_bar
+  +flex-centered(row, space-between, center)
+  position: fixed
+  top: 0
+  z-index: 20
+  left: 0
+  width: 100%
+  height: $topBarH
+  background-color: rgba(0, 0, 0, 0.75)
+  color: white
+
+  div
+    overflow: hidden
+
+
+.childOfTop 
+  height: 100% /* Or whatever */
+
+#topLeft
+  +flex-centered(row, flex-start, center)
+  width: 30%
+
+  #menuBtn
+    font-size: 2em
+    margin-left: 2rem
+    min-width: 3rem
+    color: #EC845C
+
+  #restName
+    font-size: 2em
+    margin-left: 2rem
+    font-family: 'Proxima Condensed Light',sans-serif
+
+#topMiddle
+  +flex-centered(row, space-around, center)
+  width: 40%
+  font-family: 'Proxima Condensed Light',sans-serif
+
+  #middle_divider
+    height: 30px
+    width: 0
+    border-left: 1px solid white
+    margin-right: 2rem
+    margin-left: 2rem
+
+  .middle-block
+    +flex-centered(column, center, center)
+
+    .middle-key
+      font-family: 'Proxima Condensed Regular',sans-serif
+      letter-spacing: 0.1em
+      font-size: .9em
+
+    .middle-val
+      font-family: 'Proxima Condensed light',sans-serif
+      font-size: 2em
+
+#topRight
+  +flex-centered(row, flex-end, center)
+  width: 30%
+
+  #addBtn
+    font-size: 2em
+    margin-right: 1rem
+    min-width: 3rem
+    color: #EC845C
+
+  #addTxt
+    font-size: 2em
+    margin-right: 2rem
+    font-family: 'Proxima Condensed Light',sans-serif
+

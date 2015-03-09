@@ -1,0 +1,17 @@
+{
+  "name": "Restaurant-Responsive",
+  "version": "1.0.0",
+  "description": "restaurant wireframe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.2",
+    "jquery": "^2.1.3",
+    "swiper": "^3.0.3"
+  },
+  "devDependencies": {}
+}

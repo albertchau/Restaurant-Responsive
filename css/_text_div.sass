@@ -1,0 +1,31 @@
+.text-div
+  +center()
+  height: $textDivH
+  width: 90%
+  margin: auto
+
+  .descript-bar
+    +center
+    height: 30px
+    width: 0
+    border-left: 0px solid white
+    margin-right: 1rem
+    margin-left: 1rem
+
+  .present-descript-text
+    +flex-item($flex-portrait)
+
+  .present-descript-name
+    +flex-item($flex-name)
+
+  .present-descript-arrive
+    +flex-item($flex-time)
+    text-align: center
+
+  .present-descript-est-wait
+    +flex-item($flex-wait)
+    text-align: center
+
+  .present-descript-party-size
+    +flex-item($flex-party)
+    text-align: center

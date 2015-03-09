@@ -1,0 +1,82 @@
+.swiper-container-here
+  background-color: $bkgColor
+  height: $presentH
+  width: 100%
+
+.swiper-wrapper-here
+  padding-top: 3px
+
+.swiper-slide-here
+  height: $cardHeight
+  width: 100%
+  margin: auto
+
+.card
+  height: 100%
+  width: 100%
+  background-color: $cardColor
+
+.swiper-container-present
+  position: relative
+  z-index: 1
+  width: 90%
+  height: $cardHeight
+  overflow: visible
+
+.swiper-slide-present
+  +center
+  box-shadow: 0 0 2px black
+  height: 100%
+  width: 95%
+  background-color: $cardColor
+
+  div
+    margin: auto
+
+  .card-suppl-text
+    +center
+    font-size: 2em
+    color: red
+    height: $cardHeight
+    font-family: 'Proxima Extra Condensed Light',sans-serif
+
+  .card-portrait
+    $diameter: $cardHeight * .8
+    +center
+    +flex-item($flex-portrait)
+    height: $cardHeight
+    text-align: center
+
+    img
+      border-radius: $diameter / 2
+      border: solid 1px $bkgColor
+      width: $diameter
+      height: $diameter
+
+  .card-name
+    +center-VNH
+    +flex-item($flex-name)
+    color: #000000
+    flex: $flex-name
+    font-size: 40px
+    font-family: 'Proxima Extra Condensed Regular',sans-serif
+
+  .card-arrived-time
+    +flex-item($flex-time)
+    height: $cardHeight
+
+  .card-bar
+    +center
+    height: 5px
+    width: 5px
+    background-color: $bkgColor
+    //border-left: 5px solid $bkgColor
+    border-radius: 2.5px
+    margin-right: 1rem
+    margin-left: 1rem
+
+  .card-est-wait
+    +flex-item($flex-wait)
+
+  .card-party-size
+    +flex-item($flex-party)
